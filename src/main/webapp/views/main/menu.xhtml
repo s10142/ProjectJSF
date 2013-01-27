@@ -12,12 +12,18 @@
 		  </h:commandLink>
 		</li>
 		<li>
-		  <h:commandLink action="add?faces-redirect=true">
-			<h:outputText value="#{msg.personAddLabel}" />
-		  </h:commandLink></li>
+		  <h:commandLink action="showFilesHash?faces-redirect=true">
+			 <h:outputText value="#{msg.fileHashLable}" />
+		  </h:commandLink>
+		</li>
 		<li>
-		  <h:commandLink action="showPersons?faces-redirect=true">
-			 <h:outputText value="#{msg.personAllLabel}" />
+		  <h:commandLink action="showFilesNoHash?faces-redirect=true">
+			 <h:outputText value="#{msg.fileNoHashLable}" />
+		  </h:commandLink>
+		</li>
+		<li>
+		  <h:commandLink action="showFilesAll?faces-redirect=true">
+			 <h:outputText value="#{msg.fileAllLable}" />
 		  </h:commandLink>
 		</li>
 	</ul>

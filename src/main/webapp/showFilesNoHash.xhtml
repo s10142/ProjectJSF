@@ -9,22 +9,22 @@
 	
     <h:form>
     
-     <h:dataTable value="#{personBean.allPersons}" var="item">
-      <f:facet name="header">#{msg.personAllLabel}</f:facet>
+     <h:dataTable value="#{fileBean.noHash}" var="item">
+      <f:facet name="header">#{msg.fileAllLable}</f:facet>
       
       <h:column>
-        <f:facet name="header">#{msg.personFirstNameLabel}</f:facet>
-        #{item.firstName}
+        <f:facet name="header">#{msg.filePath}</f:facet>
+        #{item.path}
       </h:column>
       
       <h:column>
-        <f:facet name="header">#{msg.personPinLabel}</f:facet>
-        #{item.pin}
+        <f:facet name="header">#{msg.fileSize}</f:facet>
+        #{item.size}
       </h:column>
-      
+            
       <h:column>
         <f:facet name="header">#{msg.action}</f:facet>
-        <h:commandLink value="#{msg.actionDelete}" action="#{personBean.deletePerson}"/>
+        <h:commandLink value="#{msg.actionDelete}" action="#{fileBean.deletefile}"/>
       </h:column>
       
      </h:dataTable>
